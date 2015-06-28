@@ -46,10 +46,17 @@ class AsciiImage {
 
 				$total_value = $rgb["red"] + $rgb["green"] + $rgb["blue"]; // total value is [0, 765]
 				if($total_value < 50) {
-					echo "&bull;";
+					echo "&diams;";
+					//echo "&bull;";
 				} elseif($total_value <= 150) {
-					echo "&circ;";
+					echo "&bull;";
+					//echo "&circ;";
 				} elseif($total_value <= 250) {
+					echo "&circ;";
+					//echo "-";
+				} elseif($total_value <= 350) {
+					echo "&not;";
+				} elseif($total_value <= 550) {
 					echo "-";
 				} else {
 					echo "`";
