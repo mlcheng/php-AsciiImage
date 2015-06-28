@@ -11,7 +11,7 @@
 ***********************************************/
 
 class AsciiImage {
-	const MAX_WIDTH = 120;
+	const MAX_WIDTH = 150;
 
 	private $_image;
 	private function setImage($image) {
@@ -44,30 +44,30 @@ class AsciiImage {
 
 
 
-				// $total_value = $rgb["red"] + $rgb["green"] + $rgb["blue"]; // total value is [0, 765]
-				// if($total_value < 50) {
-				// 	echo "&bull;";
-				// } elseif($total_value <= 150) {
-				// 	echo "&circ;";
-				// } elseif($total_value <= 250) {
-				// 	echo "-";
-				// } else {
-				// 	echo "`";
-				// }
-
-
-
-				$rgb = imagecolorsforindex($img, imagecolorat($img, $x, $y));
 				$total_value = $rgb["red"] + $rgb["green"] + $rgb["blue"]; // total value is [0, 765]
 				if($total_value < 50) {
-					echo "<span style='background: rgba(0, 0, 0, 1);'>&bull;</span>";
+					echo "&bull;";
 				} elseif($total_value <= 150) {
-					echo "<span style='background: rgba(0, 0, 0, .7);'>&bull;</span>";
+					echo "&circ;";
 				} elseif($total_value <= 250) {
-					echo "<span style='background: rgba(0, 0, 0, .5);'>&bull;</span>";
+					echo "-";
 				} else {
-					echo "<span style='background: rgba(0, 0, 0, .1);'>&bull;</span>";
+					echo "`";
 				}
+
+
+
+
+				// $total_value = $rgb["red"] + $rgb["green"] + $rgb["blue"]; // total value is [0, 765]
+				// if($total_value < 50) {
+				// 	echo "<span style='background: rgba(0, 0, 0, 1);'>&bull;</span>";
+				// } elseif($total_value <= 150) {
+				// 	echo "<span style='background: rgba(0, 0, 0, .7);'>&bull;</span>";
+				// } elseif($total_value <= 250) {
+				// 	echo "<span style='background: rgba(0, 0, 0, .5);'>&bull;</span>";
+				// } else {
+				// 	echo "<span style='background: rgba(0, 0, 0, .1);'>&bull;</span>";
+				// }
 
 
 

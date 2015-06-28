@@ -17,11 +17,12 @@ ini_set('memory_limit', '512M');
 		<style>
 			* {
 				font-family: monospace;
-				line-height: .5em;
+				line-height: .3em;
+				letter-spacing: -4px;
 			}
 		</style>
 	</head>
 	<body>
-		<?=AsciiImage::transform("1289115987722.jpg");?>
+		<?=AsciiImage::transform("20150626_114458.jpg");?>
 	</body>
 </html>
