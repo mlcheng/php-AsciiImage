@@ -37,7 +37,7 @@ class AsciiImage {
 		imagecopyresampled($img, $t_img, 0, 0, 0, 0, $new_width, $new_height, $width, $height);
 
 
-		
+		echo "<div>";
 		for($y=0;$y<$new_height;$y++) {
 			for($x=0;$x<$new_width;$x++) {
 				$rgb = imagecolorsforindex($img, imagecolorat($img, $x, $y));
@@ -47,13 +47,10 @@ class AsciiImage {
 				$total_value = $rgb["red"] + $rgb["green"] + $rgb["blue"]; // total value is [0, 765]
 				if($total_value < 50) {
 					echo "&diams;";
-					//echo "&bull;";
 				} elseif($total_value <= 150) {
 					echo "&bull;";
-					//echo "&circ;";
 				} elseif($total_value <= 250) {
 					echo "&circ;";
-					//echo "-";
 				} elseif($total_value <= 350) {
 					echo "&not;";
 				} elseif($total_value <= 550) {
@@ -86,8 +83,9 @@ class AsciiImage {
 // EOD;
 // 				echo $output;
 			}
-			echo "<br>";
+			echo $y < $new_height-1 ? "<br>" : "";
 		}
+		echo "</div>";
 	}
 }
 ?>
