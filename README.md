@@ -1,4 +1,4 @@
-# php-ascii_image
+# php-AsciiImage
 
 This small PHP library can help turn images into beautiful ASCII art. Note that the playground for a live demo will be created soon.
 
