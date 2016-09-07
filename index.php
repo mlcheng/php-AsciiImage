@@ -9,7 +9,7 @@
             --All Rights Reserved--
 
 ***********************************************/
-require("ascii_image.php");
+require("AsciiImage.php");
 ini_set('memory_limit', '512M');
 ?>
 <html>

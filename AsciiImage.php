@@ -1,7 +1,7 @@
 <?php
 /***********************************************
 
-  "ascii.php"
+  "AsciiImage.php"
 
   Created by Michael Cheng on 06/12/2015 10:24
             http://michaelcheng.us/
@@ -75,7 +75,7 @@ class AsciiImage {
 
 
 
-				//echo "<span style='color: rgba({$rgb['red']}, {$rgb['green']}, {$rgb['blue']}, 1);'>&bull;</span>";
+// 				echo "<span style='color: rgba({$rgb['red']}, {$rgb['green']}, {$rgb['blue']}, 1);'>&bull;</span>";
 				
 
 // 				$output = <<<EOD
